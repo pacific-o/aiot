@@ -13,7 +13,7 @@
 
 body {
 	background-color: var(--white);
-	
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -27,7 +27,7 @@ header {
 
 .header-box {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	align-items: center;
 }
 
@@ -48,7 +48,8 @@ header {
 .header-links li a {
 	text-decoration: none;
 	font-size: 18px;
-	color: var(--black)
+	color: var(--black);
+	font-weight: 300;
 }
 
 .header-links li:last-child a {
