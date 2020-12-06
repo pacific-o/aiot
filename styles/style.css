@@ -113,7 +113,7 @@ linear-gradient(0deg, #2F70FE, #2F70FE);
 	margin-bottom: 50px
 }
 
-.intro-explain {
+.intro-desc {
 	font-size: 18px;
 	line-height: 2rem
 }
@@ -124,22 +124,22 @@ linear-gradient(0deg, #2F70FE, #2F70FE);
     text-decoration-line: none;
 }
 
-.intro-logo {
+.intro-graphic {
 	text-align: center;
 }
 
-.intro-logo img {
+.intro-graphic img {
 	width: 530px;
 	height: 400px;
 }
 
-.dark-btn {
+.btn-dark {
 	background-color: var(--black);
 	color: var(--white);
 	padding: 15px 25px;
 }
 
-.blue-btn {
+.btn-blue {
    background-color: var(--bg);
    padding: 15px 37px;
    color: var(--black)
@@ -378,12 +378,17 @@ linear-gradient(0deg, #2F70FE, #2F70FE);
 	text-align: center;
 }
 
+.partner-explain p {
+	width: 500px;
+	margin: auto;
+}
+
 .partner-links {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: auto auto auto auto auto auto;
 	justify-content: center;
 	align-items: center;
-	grid-gap: 15px; 
+	grid-gap: 25px; 
 }
 
 .partner-links .link {
