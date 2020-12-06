@@ -87,49 +87,48 @@ section {
 	margin-bottom: 100px
 }
 
-.aiot-info {
+.aiot-intro {
 background: linear-gradient(125.92deg, #3A84FF 41.93%, #76D9F0 91.87%),
 linear-gradient(0deg, #2F70FE, #2F70FE);
 }
 
-.information {
+.aiot-intro-container {
 	display: grid;
 	grid-template-columns: auto auto;
 	align-items: center;
 	justify-content: space-between;
 	padding: 40px 0 80px;
-	color: var(--primary)
 }
 
-.info-content {
+.intro-content {
 	max-width: 600px;
 	color: var(--white)
 }
 
-.info-title h1 {
+.intro-title h1 {
 	font-size: 42px;
 }
 
-.info-content div {
+.intro-content div {
 	margin-bottom: 50px
 }
 
-.info-explain p {
+.intro-explain {
 	font-size: 18px;
 	line-height: 2rem
 }
 
-.info-links a {
+.intro-links a {
     margin-right: 10px;
     border: 1px solid black;
     text-decoration-line: none;
 }
 
-.info-logo {
+.intro-logo {
 	text-align: center;
 }
 
-.info-logo img {
+.intro-logo img {
 	width: 530px;
 	height: 400px;
 }
