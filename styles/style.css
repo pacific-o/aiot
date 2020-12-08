@@ -88,8 +88,8 @@ section {
 }
 
 .aiot-intro {
-background: linear-gradient(125.92deg, #3A84FF 41.93%, #76D9F0 91.87%),
-linear-gradient(0deg, #2F70FE, #2F70FE);
+    background: linear-gradient(125.92deg, #3A84FF 41.93%, #76D9F0 91.87%),
+    linear-gradient(0deg, #2F70FE, #2F70FE);
 }
 
 .aiot-intro-container {
@@ -399,6 +399,71 @@ linear-gradient(0deg, #2F70FE, #2F70FE);
 	align-items: center;
 	border: 1px solid lightgrey
 }
+
+.partner-sign-in {
+	text-align: center;
+	margin-top: 50px
+}
+
+.partner-btn {
+	padding: 10px 45px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: var(--black)
+}
+
+
+
+
+footer {
+	background-color: grey;
+	padding: 20px 0;
+	color: var(--white)
+}
+
+.footer-content {
+   	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-content p {
+	margin-top: 20px
+}
+
+.aiot-contact p:first-child {
+	margin-top: 0
+}
+
+.footer-content li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px 
+} 
+
+.footer-content a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.footer-content a:hover {
+	color: var(--link-hover)
+} 
+
+.aiot-media li a {
+	font-size: 26px;
+}
+
+.aiot-media ul {
+	text-align: center;
+}
+
+
+
+
+
+
 
 
 
