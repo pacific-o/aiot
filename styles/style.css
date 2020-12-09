@@ -79,12 +79,8 @@ header {
 
 
 
-
-
-
-
-section {
-	margin-bottom: 100px
+section h1 {
+	font-size: 34px
 }
 
 .aiot-intro {
@@ -148,33 +144,26 @@ section {
 
 
 
-.connect {
-	text-align: center;
+.section-qualities {
+	background-color: #dceef9
 }
 
-.connect-title {
-	text-align: center;
+.section-heading {
 	padding: 0 0 70px
 }
 
-.connect-title h1 {
-	font-size: 34px
-}
-
-.connect-items {
+.section-qualities-items {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
-	grid-gap: 50px 
 }
 
-.connect-items .item {
+.section-qualities-items .item {
 	max-width: 250px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 }
 
 
@@ -196,7 +185,7 @@ section {
 
 
 
-.features-container {
+.feature-container {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: space-evenly;
@@ -204,29 +193,20 @@ section {
 	grid-gap: 40px; 
 }
 
-.features-logo {
+.feature-image {
 	padding: 15px
 }
 
-.features-logo img {
+.feature-image img {
 	widows: 400px;
 	height: 400px;
 }
 
-.features-items {
-
-}
-
-.features-items .features-title {
-	text-align: center;
+.feature-heading {
 	margin-bottom: 40px
 }
 
-.features-items .features-title h1 {
-	font-size: 34px
-}
-
-.items-container {
+.feature-items {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-content: center;
@@ -235,13 +215,13 @@ section {
 	grid-row-gap: 50px
 }
 
-.items-container .item {
+.feature-items .item {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	align-items: center;
 }
 
-.features-items .item .item-logo img {
+.feature-items .item .item-logo img {
 	width: 45px;
 	height: 45px; 
 }
@@ -288,10 +268,6 @@ section {
 .solutions-explain {
 	text-align: center;
 	margin-bottom: 30px;
-}
-
-.solutions-title h1 {
-	font-size: 34px
 }
 
 .solutions-links {
@@ -463,6 +439,13 @@ footer {
 
 
 
+.p-h {
+	padding: 60px 0; 
+}
+
+.text-center {
+	text-align: center;
+}
 
 
 
