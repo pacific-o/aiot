@@ -185,7 +185,7 @@ section h1 {
 
 
 
-.feature-container {
+.section-feature {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: space-evenly;
@@ -241,36 +241,32 @@ section h1 {
 
 .benefits-items .item {
 	max-width: 250px;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 20px;  
 	text-align: center;
+	box-shadow: 0px 2px 20px 0px rgba(204, 204, 204, .8);
+    border-radius: 15px
 }
 
-.benefits-items .item * {
-	margin-bottom: 20px
-}
 
 
-
-.comunity {
+.community {
 	text-align: center;
 	background: url(../images/Vector1.svg) no-repeat ;
 	background-size: cover
 }
 
-.comunity-container img {
+.community-image {
 	width: 500px;
 	height: 400px
 }
 
 
 
-
-.solutions-title,
-.solutions-explain {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.solutions-links {
+.solutions-cards {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: center;
@@ -278,14 +274,14 @@ section h1 {
 	grid-gap: 15px
 }
 
-.lg-links {
+.lg-card {
 	display: grid;
 	grid-gap: 15px;
 	align-items: center;
 	justify-content: center;
 }
 
-.sm-links {
+.sm-card {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: center;
@@ -294,7 +290,7 @@ section h1 {
 	grid-row-gap: 20px
 }
 
-.layer {
+.card-overlay {
 	display: none;
 	position: absolute;
 	width: 100%;
@@ -310,34 +306,34 @@ section h1 {
 	display: none;
 }
 
-.solutions-links .link:hover .layer {
+.solutions-cards .card:hover .card-overlay {
 	display: grid;
 }
 
-.solutions-links .link:hover .title {
+.solutions-cards .card:hover .title {
 	display: none;
 }
 
 
-.layer h2 {
+.card-overlay h2 {
 	align-self: end;
 }
 
-.lg-links .link, .sm-links .link {
+.lg-card .card, .sm-card .card {
 	position: relative;
 }
 
-.lg-links .link img {
+.lg-card .card img {
 	width: 380px;
 	height: 500px
 }
 
-.sm-links .link img {
+.sm-card .card img {
 	width: 380px;
 	height: 325px;
 }
 
-.solutions-links .title  {
+.solutions-cards .title  {
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
@@ -392,7 +388,7 @@ section h1 {
 
 
 footer {
-	background-color: grey;
+	background-color: var(--black);
 	padding: 20px 0;
 	color: var(--white)
 }
@@ -445,6 +441,18 @@ footer {
 
 .text-center {
 	text-align: center;
+}
+
+.pb-h {
+	padding-bottom: 70px
+}
+
+.p-4-1 {
+	padding: 40px 10px
+}
+
+.mb-h {
+	margin-bottom: 30px
 }
 
 
