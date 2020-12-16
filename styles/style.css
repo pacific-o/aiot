@@ -16,6 +16,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.main-body {
+	position: relative;
+}
+
 .container {
 	width: 80%;
 	margin: auto;
@@ -27,7 +31,7 @@ header {
 
 .header-box {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 6fr;
 	align-items: center;
 }
 
@@ -75,6 +79,59 @@ header {
 
 .header-links li:last-child a:hover {
 	color: grey
+}
+
+.side-menu {
+	display: none;
+	text-align: right;
+}
+
+.show-btn , .hide-btn {
+	border-style: none;
+	cursor: pointer;
+}
+
+.show-btn:focus , .hide-btn:focus {
+   outline: none;
+}
+
+
+.side-bar {
+	width: 230px;
+    height: 500px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(230px);
+    transition: transform 1s;
+    z-index: 1;
+    background-color: var(--white);
+}
+
+.hide-btn {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	font-size: 22px;
+}
+
+.side-bar-links li {
+	list-style: none;
+	line-height: 2rem;
+	padding-left: 30px
+}
+
+.side-bar-links li a {
+	text-decoration: none;
+	color: var(--black);
+}
+
+.side-bar-links li a:hover {
+	color: var(--link-hover)
+}
+
+.side-shift {
+	transform: translateX(0px);
 }
 
 
@@ -187,14 +244,13 @@ section h1 {
 
 .section-feature {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 1fr 1fr;
 	justify-content: space-evenly;
 	align-items: center;
-	grid-gap: 40px; 
 }
 
 .feature-image {
-	padding: 15px
+	padding: 15px 0 15px 15px
 }
 
 .feature-image img {
@@ -217,7 +273,8 @@ section h1 {
 
 .feature-items .item {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 10px;
 	align-items: center;
 }
 
@@ -290,8 +347,11 @@ section h1 {
 	grid-row-gap: 20px
 }
 
+.card {
+	overflow: hidden;
+}
+
 .card-overlay {
-	display: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -303,17 +363,24 @@ section h1 {
 	left: 0;
 	color: var(--white);
 	padding: 30px;
-	display: none;
+	transition: all 1s ease;
 }
 
-.solutions-cards .card:hover .card-overlay {
-	display: grid;
+.sm-card .card-overlay {
+    transform: translateY(325px);
 }
 
-.solutions-cards .card:hover .title {
-	display: none;
+.sm-card .card:hover .card-overlay {
+    transform: translateY(0);
 }
 
+.lg-card .card-overlay {
+    transform: translateY(500px);
+}
+
+.lg-card .card:hover .card-overlay {
+    transform: translateY(0);
+}
 
 .card-overlay h2 {
 	align-self: end;
@@ -337,7 +404,13 @@ section h1 {
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
-	color: var(--white)
+	color: var(--white);
+	opacity: 1;
+	transition: opacity 2s ease;
+}
+
+.card:hover .title {
+	opacity: 0;
 }
 
 
@@ -447,12 +520,20 @@ footer {
 	padding-bottom: 70px
 }
 
+.p-2-1 {
+	padding: 20px 10px
+}
+
 .p-4-1 {
 	padding: 40px 10px
 }
 
 .mb-h {
 	margin-bottom: 30px
+}
+
+.mt-h {
+	margin-top: 30px
 }
 
 

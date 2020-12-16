@@ -3,7 +3,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./styles/style.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
 	<title>AIOT</title>
 </head>
@@ -23,10 +24,26 @@
 					<li><a href="#" class="login-btn btn">login</a></li>
 				</ul>
 			</div>
+			<div class="side-menu">
+	            <button class="show-btn">
+				    <img src="./images/Vector20.svg" alt="logo">
+			    </button>
+		    </div>
 		</div>
 	</header>
 	
 	<div class="main-body">
+       <div class="side-bar p-2-1">
+       	    <img src="./images/logo.svg" alt="">
+       	    <button class="hide-btn"><i class="fas fa-times"></i></button>
+       	    <ul class="side-bar-links mt-h">
+       		    <li><a href="">Features</a></li>
+       		    <li><a href="">Solutions</a></li>
+       		    <li><a href="">Our Partner</a></li>
+       		    <li><a href="">Request an Account</a></li>
+       	    </ul>
+       </div>
+
 	    <section>
 		    <div class="aiot-intro">
 		        <div class="container aiot-intro-container">
@@ -317,6 +334,7 @@
 
 	</div>
 
-<script src="https://kit.fontawesome.com/27107847e4.js" crossorigin="anonymous"></script> 	
+<script src="https://kit.fontawesome.com/27107847e4.js" crossorigin="anonymous"></script> 
+<script src="./js/script.js"></script>	
 </body>
 </html>
