@@ -96,22 +96,16 @@ header {
 
 .show-btn,
 .hide-btn {
-	border-style: none;
 	cursor: pointer;
 }
 
-.show-btn:focus,
-.hide-btn:focus {
-	outline: none;
-}
-
 .side-bar {
-	width: 230px;
-	height: 500px;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
 	right: 0;
 	top: 0;
-	transform: translateX(230px);
+	transform: translateX(100vw);
 	transition: transform 1s;
 	z-index: 1;
 	background-color: var(--white);
@@ -122,6 +116,7 @@ header {
 	right: 10px;
 	top: 30px;
 	font-size: 22px;
+	color: var(--black)
 }
 
 .side-bar-links li {
@@ -141,7 +136,7 @@ header {
 }
 
 .side-shift {
-	transform: translateX(0px);
+	transform: translateX(0vw);
 }
 
 section h1 {
@@ -619,6 +614,9 @@ footer {
 	.community-image {
 		width: 235px
 	}
+	.solutions-cards .title {
+        display: none;
+    }
 	.mt-h-2 {
 		margin-top: 80px
 	}
