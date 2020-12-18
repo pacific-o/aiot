@@ -139,6 +139,10 @@ header {
 	transform: translateX(0vw);
 }
 
+section {
+	position: relative;
+}
+
 section h1 {
 	font-size: 34px
 }
@@ -217,6 +221,15 @@ section h1 {
 	align-items: center;
 }
 
+.bg-theme {
+	position: absolute;
+}
+
+.section-qualities .bg-theme {
+	right: 0;
+	top: 15px
+}
+
 .image-container {
 	width: 100px;
 	height: 100px;
@@ -231,6 +244,11 @@ section h1 {
 .image-container img {
 	width: 50px;
 	height: 50px;
+}
+
+.sec-3 .bg-theme {
+    left: 0;
+    top: -115px
 }
 
 .section-feature {
@@ -287,7 +305,7 @@ section h1 {
 }
 
 .benefits-items .item {
-	max-width: 250px;
+	max-width: 270px;
 	display: grid;
 	grid-template-columns: 1fr;
 	align-items: center;
@@ -295,7 +313,14 @@ section h1 {
 	grid-gap: 20px;
 	text-align: center;
 	box-shadow: 0px 2px 20px 0px rgba(204, 204, 204, .8);
-	border-radius: 15px
+	border-radius: 15px;
+	background-color: var(--white);
+	z-index: 1
+}
+
+.sec-4 .bg-theme {
+    right: 435px;
+    top: -30px
 }
 
 .community {
@@ -306,6 +331,11 @@ section h1 {
 
 .community-image {
 	width: 500px;
+}
+
+.sec-5 .bg-theme {
+    left: 0;
+    top: -160px;
 }
 
 .solutions-cards {
@@ -394,6 +424,11 @@ section h1 {
 
 .card:hover .title {
 	opacity: 0;
+}
+
+.sec-6 .bg-theme {
+    left: 0;
+    bottom: -155px
 }
 
 .partner .partner-title,
@@ -691,6 +726,9 @@ footer {
     }
     .footer-links p {
     	padding: 0 5px
+    }
+    .bg-theme {
+    	display: none;
     }
 	.mt-h-2 {
 		margin-top: 60px
