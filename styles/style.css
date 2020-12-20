@@ -1,7 +1,7 @@
 :root {
 	--white: #fff;
 	--black: #000;
-	--link-hover: #6394fd;
+	--link-hover: #00ccff;
 	--bg: #a8dcf0;
 }
 
@@ -62,12 +62,17 @@ header {
 }
 
 .header-links li:last-child a {
-	color: var(--link-hover)
+	color: #2F70FE
 }
 
 .header-links li:nth-child(5) a {
 	color: grey
 }
+
+.header-links li:last-child a:hover {
+	border: 1px solid var(--link-hover) 
+}
+
 
 .header-links li a:hover {
 	color: var(--link-hover)
@@ -77,13 +82,13 @@ header {
 	border-radius: 20px;
 }
 
-.login-btn {
-	padding: 10px 25px;
-	border: 1px solid var(--link-hover);
+.btn:hover {
+	color: var(--link-hover)
 }
 
-.header-links li:last-child a:hover {
-	color: grey
+.login-btn {
+	padding: 10px 25px;
+	border: 1px solid #2F70FE;
 }
 
 .side-menu {
@@ -197,6 +202,10 @@ section h1 {
 	background-color: var(--bg);
 	padding: 15px 37px;
 	color: var(--black)
+}
+
+.btn-blue:hover {
+	color: var(--white)
 }
 
 .section-qualities {
